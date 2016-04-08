@@ -15,8 +15,13 @@ Homepage: <http://tjjr.fi/sw/libsuinput/>
 How to install
 ==============
 
-Just run the following commands:
+Ensure that the following packages are installed with :
+```
+  sudo apt-get install build-essential libudev-dev autoconf automake autotools-dev libtool
+```
 
+Just run the following commands:
+  ./autogen.sh
   ./configure && make && make install
 
 It installs the library to /usr/local/lib and header files to
